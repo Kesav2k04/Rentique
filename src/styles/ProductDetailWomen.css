@@ -1,0 +1,210 @@
+.product-page {
+    display: flex;
+    margin: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .product-gallery {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .main-image {
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .thumbnail-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .selected-thumbnail {
+    border: 2px solid #000;
+  }
+  
+  .product-details {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    max-height: 700px;
+    overflow-y: auto;
+  }
+  
+  .product-details h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .product-details p {
+    margin: 10px 0;
+  }
+  
+  .price {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .security-deposit {
+    font-size: 1.2em;
+    color: #e67e22;
+  }
+  
+  .total-cost {
+    font-size: 1.5em;
+    color: #e74c3c;
+  }
+  
+  .size-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .size-selection h3 {
+    margin: 0;
+  }
+  
+  .sizes {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .size-button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .size-button.selected {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .check-size button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .check-size button:hover {
+    background-color: #0056b3;
+  }
+  
+  .rental-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .rental-dates {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .rental-dates input,
+  .rental-duration select {
+    padding: 5px;
+    border: 1px solid #464646;
+    border-radius: 5px;
+  }
+  
+  .rental-duration {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .rent-now {
+    padding: 10px 20px;
+    background-color: #4f4f4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .rent-now:hover {
+    background-color: #218838;
+  }
+  
+  .size-chart-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .size-chart-content {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .size-chart-content h3 {
+    margin-top: 0;
+  }
+  
+  .size-chart-content table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .size-chart-content th,
+  .size-chart-content td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+  

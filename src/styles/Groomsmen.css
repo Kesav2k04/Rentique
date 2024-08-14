@@ -1,0 +1,118 @@
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin-right: 0px;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+    padding: 20px; /* Add padding around the container */
+    background-color: #ffffff; /* Ensure the container has a white background */
+  }
+  
+  .card {
+    flex: 0 1 calc(25% - 20px);
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+  }
+  
+  .card:after {
+    content: 'Rentique';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 9.5em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(165, 36, 36, 0.169);
+  }
+  
+  .card .imgBx {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+  }
+  
+  .card .imgBx img {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px; /* Adjust the width to make the image medium-sized */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure the image doesn't exceed the container */
+    max-height: 200%; /* Ensure the image doesn't exceed the container */
+  }
+  
+  .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 110px; /* Adjust height to avoid large gap */
+    text-align: center;
+    transition: 0.8s;
+    z-index: 10;
+    background: #232323;
+    padding: 10px;
+  }
+  
+  .card:hover .contentBx {
+    height: 150px; /* Adjust height on hover to show more content */
+  }
+  
+  .card .contentBx h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .card .contentBx p {
+    color: #fff;
+    margin: 10px 0;
+  }
+  
+  .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+  }
+  
+  .card:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.75s;
+  }
+  

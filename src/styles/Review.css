@@ -1,0 +1,114 @@
+@import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap');
+
+.circle-cards-container {
+  --color: rgba(30, 30, 30);
+  --bgColor: rgb(248, 247, 245);
+  --goldenColor: #FFD700;
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color);
+  /* background: var(--bgColor); */
+}
+
+.circle-cards-container h1 {
+  text-align: center;
+  background: linear-gradient(90deg, #1f0e0a, #fed47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.circle-cards-list {
+  width: min(60rem, 100%);
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style: none;
+  
+  counter-reset: stepnr;
+}
+
+.circle-cards-list .circle-card {
+  counter-increment: stepnr;
+  width: 18rem;
+  --borderS: 2rem;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: calc(var(--borderS) + 2rem);
+  position: relative;
+
+}
+
+.circle-cards-list .circle-card::before,
+.circle-cards-list .circle-card::after {
+  inset: 0;
+  position: absolute;
+  border-radius: 100%;
+  border: var(--borderS) solid var(--bgColor);
+  line-height: 2.1;
+}
+
+
+.circle-cards-list .circle-card::after {
+  content: '';
+  filter: drop-shadow(-0.25rem 0.25rem 0.0675rem rgba(0, 0, 0, 0.75)) blur(5px);
+  color: aqua;
+}
+
+.circle-cards-list .circle-card > * {
+  width: 7.5rem;
+}
+.circle-cards-list .circle-card .circle-card-icon {
+  font-size: 4.0rem;
+  color:#daaa3d;
+  position: absolute;
+  right: calc(var(--borderS) + -2.30rem);
+  bottom: calc(var(--borderS) + 4.9rem);
+}
+
+
+.circle-cards-list .circle-card .circle-card-title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.circle-cards-list .circle-card .circle-card-description {
+  font-size: 0.8rem;
+  font-weight: 300;
+  display: flex;
+  color: rgb(18, 17, 17);
+}
+
+.circle-cards-list .circle-card .circle-card-stars {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 0.3rem;
+  color: #FFD700;
+}
+
+.circle-cards-list .circle-card .circle-card-stars .fa-star,
+.circle-cards-list .circle-card .fa-star-half-alt,
+.circle-cards-list .circle-card .fa-star-o {
+  color: #FFD700;
+}
+
+.circle-cards-credits {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.circle-cards-credits a {
+  color: var(--color);
+}
+
+.circle-card-1 { --accent-color: #b8df4e }
+.circle-card-2 { --accent-color: #4cbccb }
+.circle-card-3 { --accent-color: #7197d3 }

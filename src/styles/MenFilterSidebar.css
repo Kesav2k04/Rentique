@@ -1,0 +1,109 @@
+/* Ensure the filter sidebar and button are in the correct positions */
+.men-filter-sidebar-container {
+    position: relative;
+    width: 300px; /* Adjust based on your layout */
+    margin-right: 20px; /* Space between the sidebar and product list */
+}
+
+.men-filter-sidebar {
+    position: absolute;
+    top: 0;
+    left: -300px;
+    width: 200px;
+    height: calc(100vh - 70px); /* Adjust to fit below the 3D slider */
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.men-filter-sidebar.open {
+    left: 0;
+}
+
+.men-filter-sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.men-filter-sidebar h2 {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.men-filter-sidebar label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.men-filter-sidebar input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.filter-toggle-btn {
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 50px;
+    height: 50px;
+    background: #282c34;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-toggle-btn.hidden {
+    display: none;
+}
+
+.price-slider {
+    width: 100%;
+    margin-bottom: 10px;
+    background: #f8f8f8; /* Ensure background color matches the sidebar */
+}
+
+.color-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.color-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.color-icon.black {
+    background-color: black;
+}
+
+.color-icon.blue {
+    background-color: blue;
+}
+
+.color-icon.grey {
+    background-color: grey;
+}
+
+.color-icon.brown {
+    background-color: brown;
+}
+
+.color-icon.green {
+    background-color: green;
+}
