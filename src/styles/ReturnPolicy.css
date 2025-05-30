@@ -1,0 +1,89 @@
+.rp-container {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(201, 62, 62, 0.1);
+    line-height: 1.7;
+    font-family: 'Arial', sans-serif;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.rentique-return-policy {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(229, 38, 38, 0.1);
+}
+.rentique-policy, .rentique-products {
+    margin-bottom: 40px;
+}
+
+.rentique-policy h2, .rentique-products h2 {
+    color: #333;
+    text-align: center;
+    background: linear-gradient(90deg, #1f0e0a, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.rentique-policy p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.rentique-products .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rentique-products .product-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.rentique-products .product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.rentique-products .product-item h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.rentique-products .product-item p {
+    margin: 10px 0;
+    color: #777;
+}
+
+.rentique-products .product-item button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.rentique-products .product-item button:hover {
+    background-color: #555;
+}
+
+.rentique-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}

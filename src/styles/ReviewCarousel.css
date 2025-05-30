@@ -1,0 +1,81 @@
+/* src/styles/ReviewCarousel.css */
+.slick-slide {
+    display: flex !important;
+    justify-content: center;
+}
+
+.slick-slide div {
+    width: 70vw;
+    overflow: hidden;
+    height: fit-content;
+    font-family: sans-serif;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.ImgHolder {
+    background-color: #4361ee;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.ContentHolder {
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.slick-dots li button:before {
+    color: #4361ee;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #4361ee;
+}
+
+.slick-slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    object-fit: cover;
+    border: 3px solid #4361ee;
+    outline: 2px solid white;
+}
+
+.slick-slide h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.slick-slide p {
+    font-size: 0.9rem;
+    padding: 5px;
+}
+
+@media (max-width: 638px) {
+    .slick-slide div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .slick-slide div {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 300px) {
+    .slick-slide div {
+        width: 100%;
+    }
+
+    .slick-slide div {
+        border-radius: 0px;
+    }
+}

@@ -1,0 +1,99 @@
+/* General Container Styling */
+.tc-container {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    line-height: 1.7;
+    font-family: 'Arial', sans-serif;
+    margin-top: 70px;
+  }
+  
+  /* Title Styling */
+  .tc-title {
+    font-size: 2.8em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #000;
+    background: linear-gradient(90deg, #1f0e0a, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  /* Section Headings Styling */
+  .tc-section-heading {
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 20px; /* Add margin below headings */
+    font-weight: bold;
+    background: linear-gradient(90deg, #1f0e0a, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Paragraph Styling */
+  .tc-paragraph {
+    margin-bottom: 25px;
+    color: #333;
+    text-align: justify;
+    font-size: 1em;
+  }
+  
+  /* List Styling */
+  .tc-list {
+    margin: 15px 0;
+    padding-left: 20px;
+    color: #333;
+  }
+  
+  .tc-list-item {
+    margin-bottom: 12px;
+    line-height: 1.6;
+  }
+  
+  /* Links Styling */
+  .tc-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .tc-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .tc-container {
+      padding: 20px;
+      margin: 15px;
+    }
+  
+    .tc-title {
+      font-size: 2.2em;
+    }
+  
+    .tc-section-heading {
+      font-size: 1.7em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tc-title {
+      font-size: 1.8em;
+    }
+  
+    .tc-section-heading {
+      font-size: 1.4em;
+    }
+  
+    .tc-paragraph {
+      font-size: 1em;
+    }
+  }
+  
