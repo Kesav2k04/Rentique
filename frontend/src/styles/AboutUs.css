@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+  }
+  
+  
+  .about-us {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+  .about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #c6cfd6 0%, #96d7c7 100%);
+    opacity: 0.2;
+    z-index: 1;
+  }
+  
+  .about:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+    background-color: #ffffff; 
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .pic {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .pic:hover {
+    transform: scale(1.0); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .text {
+    text-align: center;
+  }
+  
+  .text h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase text for emphasis */
+  }
+  
+  .text h5 {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    font-weight: normal;
+  }
+  
+  .text p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px; 
+  }
+  
+  /* Mission Section Styling */
+  .mission-section {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    margin: 0 20px; 
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 800px;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .mission-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #c6cfd6 0%, #6cd7bd 100%);
+    opacity: 0.2;
+    z-index: 1;
+  }
+  
+  .mission-section h3 {
+    color: #181819;
+    font-size: 2.5em; /* Same as .text h1 */
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .mission-section p {
+    color: #333;
+    font-size: 1em; /* Same as .text p */
+    line-height: 1.6;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Hover Effects */
+  .about:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .mission-section:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      padding: 20px;
+    }
+  
+    .text h1 {
+      font-size: 2em;
+    }
+  
+    .text h5 {
+      font-size: 1em;
+    }
+  
+    .mission-section {
+      padding: 20px;
+    }
+  
+    .mission-section h3 {
+      font-size: 1.5em;
+    }
+  
+    .mission-section p {
+      font-size: 1em;
+    }
+  
+    .show-more-btn {
+      width: 100%;
+      padding: 12px;
+      font-size: 18px;
+    }
+  }

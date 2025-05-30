@@ -1,0 +1,69 @@
+.ppcontainer {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    line-height: 1.7;
+    font-family: 'Arial', sans-serif;
+    margin-top: 70px;
+}
+.rentique-privacy-policy {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rentique-privacy-policy h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #444;
+    background: linear-gradient(90deg, #1f0e0a, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.pp-paragraph {
+    margin-bottom: 25px;
+    color: #333;
+    text-align: justify;
+    font-size: 1em;
+  }
+  
+.rentique-privacy-policy h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #555;
+    background: linear-gradient(90deg, #1f0e0a, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rentique-privacy-policy p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.rentique-privacy-policy ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.rentique-privacy-policy ul li {
+    margin-bottom: 10px;
+}
+
+.rentique-privacy-policy a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.rentique-privacy-policy a:hover {
+    text-decoration: underline;
+}

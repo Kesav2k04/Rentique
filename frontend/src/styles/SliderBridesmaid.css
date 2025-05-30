@@ -1,0 +1,121 @@
+/* Slider.css */
+.slider-container {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #ffffff;
+    color: #fff;
+  }
+  
+  .slider {
+    margin: 0 auto;
+    width: 100vw; /* Use viewport width for full width */
+    height: 70vh; /* Use viewport height for full height */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Hide overflow to avoid white space */
+    perspective: 1500px; /* Apply perspective to the slider */
+  }
+  
+  .slider-wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 900ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slider-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center center; /* Centers the image */
+    transition: all 900ms ease-in-out;
+    transform-origin: center;
+    opacity: 0; /* Hide by default */
+    z-index: -1; /* Ensure it's behind other content */
+    flex-direction: column; /* Center text vertically */
+  }
+  
+  .slider-item.active {
+    opacity: 1; /* Show active item */
+    z-index: 1; /* Bring active item to the front */
+  }
+  
+  .slider-item__image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ensure image covers the container while maintaining aspect ratio */
+  }
+  
+  .slider-item__info {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    perspective: 1500px; /* Apply perspective to info section */
+    position: absolute;
+    bottom: 20px; /* Position text near the bottom of the item */
+    width: 100%; /* Ensure the text container spans the full width */
+  }
+  
+  .slider-item__year,
+  .slider-item__name {
+    display: inline-block;
+    transform: rotateX(0deg); /* Apply 3D rotation */
+    transition: transform 900ms ease-in-out, text-shadow 900ms ease-in-out;
+  }
+  
+  .slider-item__year {
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+    overflow: hidden;
+    line-height: 30px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8); /* Add shadow for depth effect */
+  }
+  
+  .slider-item__name {
+    font-size: 55px;
+    letter-spacing: 3px;
+    margin-bottom: 0; /* Remove bottom margin */
+    overflow: hidden;
+    line-height: 55px;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.8); /* Add shadow for depth effect */
+  }
+  
+  .slider-btn {
+    background: #fff;
+    color: #120d0b;
+    padding: 0 33px;
+    text-decoration: none;
+    display: inline-block;
+    transform: scale(0.7);
+    height: 50px; /* Adjust height as needed */
+    line-height: 50px; /* Center text vertically */
+    position: relative;
+    overflow: hidden;
+    transition: all 900ms ease-in-out;
+  }
+  
+  @media (min-width: 768px) {
+    .slider-item__image {
+      object-fit: cover;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .slider-item__image {
+      object-fit: contain; /* Or other settings based on needs */
+    }
+  }
+  
