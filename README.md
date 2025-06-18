@@ -85,9 +85,11 @@ Designer Form: /api/designers – submission endpoint
 
 
 🤝 Contributing
+
 Fork this repo 📁
 
-Create a feature branch git checkout -b feature/xyz
+Create a feature branch 
+-- git checkout -b feature/xyz
 
 Implement and commit with descriptive messages
 
@@ -100,6 +102,7 @@ Please follow code style conventions and add tests when applicable.
 
 
 📄 License
+
 Copyright © 2025 Kesav Kumar J
 
 This project is made publicly visible for educational and professional demonstration purposes only.
@@ -115,6 +118,10 @@ For inquiries or collaboration, please contact kesavk659@gmail.com.
 Kesav Kumar J
 B.Tech IT @ Sri Krishna College of Technology
 Full-Stack Developer & Cloud Enthusiast
+
+
+---
+
 
 💡 Note: JWT authentication and deployment (Docker/CI) are not yet implemented; will be added soon as backend matures.
 
