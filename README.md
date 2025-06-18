@@ -28,30 +28,6 @@ Aligned with circular fashion principles and UN SDG 12 (Responsible Consumption)
 | Testing   | TBD |
 | Build     | npm (frontend), Maven/Gradle (backend) |
 
----
-
-## 📂 Project Structure
-
-Rentique/
-├── client/ # React frontend
-│ ├── src/
-│ │ ├── components/ # Reusable UI parts (Navbar, ProductCard…)
-│ │ ├── pages/ # Page-level components
-│ │ ├── assets/ # Static content (images, SVGs)
-│ │ ├── styles/ # Global/custom styles
-│ │ ├── App.jsx
-│ │ └── main.jsx
-│ └── index.html
-├── server/ # Spring Boot backend
-│ ├── src/main/java/…/controller/
-│ ├── src/main/java/…/model/
-│ ├── src/main/java/…/repository/
-│ ├── src/main/java/…/service/
-│ └── src/main/resources/application.properties
-├── README.md # Project documentation
-├── package.json # Frontend dependencies
-└── pom.xml / build files # Backend dependencies
-
 
 ---
 
