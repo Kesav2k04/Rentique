@@ -58,6 +58,7 @@ cd server
 ---
 
 🎯 Roadmap
+
 🔒 JWT Authentication & Role-based Access Control
 
 🧱 Containerization & Deployment (Docker, CI/CD pipelines)
@@ -73,6 +74,7 @@ cd server
 
 
 📋 API Status
+
 Base: /api/products – list, details, search
 
 Wishlist: /api/wishlist – add/remove/view
@@ -115,6 +117,7 @@ For inquiries or collaboration, please contact kesavk659@gmail.com.
 
 
 👤 Author
+
 Kesav Kumar J
 B.Tech IT @ Sri Krishna College of Technology
 Full-Stack Developer & Cloud Enthusiast
