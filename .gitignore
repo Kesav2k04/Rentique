@@ -34,3 +34,7 @@ build/
 
 .env
 *.log
+
+node_modules/
+.env
+target/
