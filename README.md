@@ -14,6 +14,11 @@
 
 ## Architecture & System Design
 
+<div align="center">
+  <img src="docs/assets/system-architecture.png" alt="Rentique System Architecture" width="800"/>
+  <p><em>Rentique High-Level System Architecture</em></p>
+</div>
+
 Rentique is built with a highly decoupled, microservices-ready architecture that cleanly separates the frontend presentation layer from the robust Spring Boot backend. The system is entirely containerized using Docker, allowing for seamless local orchestration and CI/CD validation.
 
 ### Core Stack
