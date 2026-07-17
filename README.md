@@ -14,10 +14,36 @@
 
 ## Architecture & System Design
 
-<div align="center">
-  <img src="docs/assets/system-architecture.png" alt="Rentique System Architecture" width="800"/>
-  <p><em>Rentique High-Level System Architecture</em></p>
-</div>
+```mermaid
+graph TD
+    %% Core Infrastructure
+    User([User / Browser])
+    
+    subgraph "Frontend Layer (React + Vite)"
+        UI[User Interface]
+        State[State Management]
+        Router[React Router]
+        UI --> State
+        State --> Router
+    end
+    
+    subgraph "Backend Layer (Spring Boot)"
+        API[RESTful API Gateway]
+        Service[Service Layer]
+        Data[Data Access Layer (JPA)]
+        API --> Service
+        Service --> Data
+    end
+    
+    subgraph "Persistence"
+        MySQL[(MySQL Database)]
+    end
+    
+    %% Connections
+    User -->|HTTP/HTTPS| UI
+    Router -->|JSON/REST| API
+    Data -->|TCP/IP| MySQL
+```
 
 Rentique is built with a highly decoupled, microservices-ready architecture that cleanly separates the frontend presentation layer from the robust Spring Boot backend. The system is entirely containerized using Docker, allowing for seamless local orchestration and CI/CD validation.
 
