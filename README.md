@@ -16,10 +16,9 @@
 
 ```mermaid
 graph TD
-    %% Core Infrastructure
     User([User / Browser])
     
-    subgraph "Frontend Layer (React + Vite)"
+    subgraph Frontend [Frontend Layer React and Vite]
         UI[User Interface]
         State[State Management]
         Router[React Router]
@@ -27,19 +26,18 @@ graph TD
         State --> Router
     end
     
-    subgraph "Backend Layer (Spring Boot)"
+    subgraph Backend [Backend Layer Spring Boot]
         API[RESTful API Gateway]
         Service[Service Layer]
-        Data[Data Access Layer (JPA)]
+        Data[Data Access Layer JPA]
         API --> Service
         Service --> Data
     end
     
-    subgraph "Persistence"
+    subgraph Persistence [Persistence]
         MySQL[(MySQL Database)]
     end
     
-    %% Connections
     User -->|HTTP/HTTPS| UI
     Router -->|JSON/REST| API
     Data -->|TCP/IP| MySQL
